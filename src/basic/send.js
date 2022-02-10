@@ -1,6 +1,8 @@
 const web3 = require("@solana/web3.js");
-const {account_1} = require('../resources/testAccount');
 const clusterConnection = require('../resources/clusterConnection');
+require("dotenv").config({
+  path: `../../.env`,
+});
 
 async function main() {
     const connection = await clusterConnection.getConnection();
